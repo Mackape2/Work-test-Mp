@@ -17,7 +17,7 @@ public class Cubes : MonoBehaviour
         Deltatime += Time.deltaTime;
         if (Deltatime >= 2)
         {
-            transform.position = Ground.WordleList[Random.Range(0,5),Random.Range(0,5)].transform.position;
+            transform.position = GameData.WordleList[Random.Range(0,(int)GameData.AmountOfRows),Random.Range(0,(int)GameData.AmountOfColums)].transform.position;
             Deltatime = 0;
         }
     }
